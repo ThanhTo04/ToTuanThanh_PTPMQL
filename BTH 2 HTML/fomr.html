@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>The name Attribute - Forms - Hoang Manh Cuong_2321050103</h2>
+    <!--Phần tử HTML <form>được sử dụng để tạo biểu mẫu HTML để người dùng nhập dữ liệu:-->
+    <form action="/action_page.php">
+      <label for="fname">First name:</label><br />
+      <input type="text" id="fname" value="John" /><br /><br />
+      <!--Định <input type="text">nghĩa trường nhập liệu một dòng để nhập văn bản.-->
+      <input type="submit" value="Submit" />
+      <!--<input type="submit">: một nút để gửi dữ liệu biểu mẫu tới trình xử lý biểu mẫu-->
+    </form>
+    <h2>Checkboxes</h2>
+    <p>The <strong>input type="checkbox"</strong> defines a checkbox:</p>
+    <!--Checkbox: hộp kiểm cho phép người dụng chọn không hoặc nhiều tùy chọn-->
+    <form action="/action_page.php">
+      <input type="checkbox" id="vehicle1" name="vehicle1" value="xe may" />
+      <label for="vehicle1"> Xe may cua toi</label><br />
+      <input type="checkbox" id="vehicle2" name="vehicle2" value="oto" />
+      <label for="vehicle2"> Muốn mua oto</label><br />
+      <input type="checkbox" id="vehicle3" name="vehicle3" value="PC" />
+      <label for="vehicle3"> Mua pc mới</label><br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+    <!--Nút radio cho phép người dùng chọn 1 trong số các lựa chọn có hạn-->
+    <p>xin chao</p>
+
+    <form>
+      <input type="radio" id="html" name="fav_language" value="HTML" />
+      <label for="html">HTML</label><br />
+      <input type="radio" id="css" name="fav_language" value="CSS" />
+      <label for="css">CSS</label><br />
+      <input
+        type="radio"
+        id="javascript"
+        name="fav_language"
+        value="JavaScript"
+      />
+      <label for="javascript">JavaScript</label>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<body>
+<form action="/action_page.php" id="form1">
+  <label for="fname">Họ của bạn</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <input type="submit" value="Submit">
+</form>
+<label for="lname">Tên của bạn</label>
+<input type="text" id="lname" name="lname" form="form1">
+</body>
+</html>
