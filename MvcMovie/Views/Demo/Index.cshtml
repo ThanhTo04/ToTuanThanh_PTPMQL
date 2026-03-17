@@ -1,0 +1,14 @@
+﻿@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Hello Nghiêm Thành Long 2221050190</h2>
+
+<form asp-action="Index" method="post">
+    <label>Nhập họ tên:</label>
+    <input type="text" name="FullName">
+
+    <input type="submit" value="Gửi dữ liệu">
+</form>
+
+<h1>@ViewBag.Message</h1>

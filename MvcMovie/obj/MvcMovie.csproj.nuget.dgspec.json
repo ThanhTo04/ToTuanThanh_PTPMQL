@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Net_Core_API\\MvcMovie\\MvcMovie.csproj": {}
+    "C:\\Users\\Long\\Documents\\NghiemThanhLong_PTPMQL\\MvcMovie\\MvcMovie.csproj": {}
   },
   "projects": {
-    "E:\\Net_Core_API\\MvcMovie\\MvcMovie.csproj": {
+    "C:\\Users\\Long\\Documents\\NghiemThanhLong_PTPMQL\\MvcMovie\\MvcMovie.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Net_Core_API\\MvcMovie\\MvcMovie.csproj",
+        "projectUniqueName": "C:\\Users\\Long\\Documents\\NghiemThanhLong_PTPMQL\\MvcMovie\\MvcMovie.csproj",
         "projectName": "MvcMovie",
-        "projectPath": "E:\\Net_Core_API\\MvcMovie\\MvcMovie.csproj",
-        "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-        "outputPath": "E:\\Net_Core_API\\MvcMovie\\obj\\",
+        "projectPath": "C:\\Users\\Long\\Documents\\NghiemThanhLong_PTPMQL\\MvcMovie\\MvcMovie.csproj",
+        "packagesPath": "C:\\Users\\Long\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Long\\Documents\\NghiemThanhLong_PTPMQL\\MvcMovie\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Long\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
@@ -43,6 +43,32 @@
       "frameworks": {
         "net10.0": {
           "targetAlias": "net10.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[10.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[10.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[10.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[10.0.3, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[10.0.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
