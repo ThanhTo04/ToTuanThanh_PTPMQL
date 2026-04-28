@@ -1,15 +1,11 @@
-public class Person
+namespace MvcMovie.Models
 {
-    public string PersonId { get; set; }
-    public string FullName { get; set; }
-    public string Address { get; set; }
-
-    public Person() { }
-
-    public Person(string personId, string fullName, string address)
+    public class Person
     {
-        PersonId = personId;
-        FullName = fullName;
-        Address = address;
+        public int PersonId { get; set; }
+
+        public string Name { get; set; }
+
+        public string Address { get; set; }
     }
 }

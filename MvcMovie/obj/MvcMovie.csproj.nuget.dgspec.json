@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Long\\Documents\\NghiemThanhLong_PTPMQL\\MvcMovie\\MvcMovie.csproj": {}
+    "E:\\Net_Core_API\\MvcMovie\\MvcMovie.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Long\\Documents\\NghiemThanhLong_PTPMQL\\MvcMovie\\MvcMovie.csproj": {
+    "E:\\Net_Core_API\\MvcMovie\\MvcMovie.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Long\\Documents\\NghiemThanhLong_PTPMQL\\MvcMovie\\MvcMovie.csproj",
+        "projectUniqueName": "E:\\Net_Core_API\\MvcMovie\\MvcMovie.csproj",
         "projectName": "MvcMovie",
-        "projectPath": "C:\\Users\\Long\\Documents\\NghiemThanhLong_PTPMQL\\MvcMovie\\MvcMovie.csproj",
-        "packagesPath": "C:\\Users\\Long\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Long\\Documents\\NghiemThanhLong_PTPMQL\\MvcMovie\\obj\\",
+        "projectPath": "E:\\Net_Core_API\\MvcMovie\\MvcMovie.csproj",
+        "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
+        "outputPath": "E:\\Net_Core_API\\MvcMovie\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Long\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
@@ -44,6 +44,10 @@
         "net10.0": {
           "targetAlias": "net10.0",
           "dependencies": {
+            "ClosedXML": {
+              "target": "Package",
+              "version": "[0.105.0, )"
+            },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
