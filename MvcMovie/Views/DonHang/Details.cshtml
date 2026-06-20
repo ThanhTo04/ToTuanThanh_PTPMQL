@@ -1,0 +1,58 @@
+@model MvcMovie.Models.Entities.DonHang
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>DonHang</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.STT)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.STT)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TenKH)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TenKH)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.MaDonHang)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.MaDonHang)
+        </dd>
+    </dl>
+    <h3>Khách hàng</h3>
+<p>@Model.TenKH</p>
+
+<h3>Sản phẩm đã mua</h3>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Tên sản phẩm</th>
+            <th>Số lượng</th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach(var item in Model.ChiTietDonHang ?? new List<MvcMovie.Models.Entities.ChiTietDonHang>())
+    {
+        <tr>
+            <td>@item.SanPham?.TenSanPham</td>
+            <td>@item.STT</td>
+        </tr>
+    }
+    </tbody>
+</table>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

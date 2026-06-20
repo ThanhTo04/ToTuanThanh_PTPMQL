@@ -3,16 +3,21 @@ using MvcMovie.Models.Entities;
 
 namespace MvcMovie.Data
 {
-public class ApplicationDbContext : DbContext
-{
-    public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
-    {}
-    public DbSet<Student> Students { get; set; }
-    public DbSet<Faculty> Faculties { get; set; }
-    //buoi9
-    public DbSet<Customer> Customers { get; set; }
-    public DbSet<Product> Products { get; set; }
-    public DbSet<Order> Orders { get; set; }
-    public DbSet<OrderDetail> OrderDetails { get; set; }
-}
+    public class ApplicationDbContext : DbContext
+    {
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
+            : base(options)
+        {
+        }
+
+        // ===== Student + Faculty =====
+        public DbSet<Student> Students { get; set; }
+        public DbSet<Faculty> Faculties { get; set; }
+
+        // ===== Customer Order Product =====
+        public DbSet<KhachHang> KhachHang { get; set; }
+        public DbSet<DonHang> DonHang { get; set; }
+        public DbSet<SanPham> SanPham { get; set; }
+        public DbSet<ChiTietDonHang> ChiTietDonHang { get; set; }
+    }
 }
